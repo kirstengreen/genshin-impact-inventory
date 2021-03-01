@@ -12,3 +12,43 @@ body {
     font-family: 'Open Sans', sans-serif;
     box-sizing: border-box;
 }
+
+a {
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+
+
+/* HEADER STYLES */
+
+header {
+    position: sticky;
+    padding: 8px 0;
+    background-color: rgb( 51, 51, 51 );
+    box-shadow: 3px 3px 3px rgba( 51, 51, 51, .3 );
+    color: rgb( 255, 255, 255 )
+}
+
+.navbar {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    display: inline-block;
+    margin: auto;
+    padding: 8px 0;
+    font-size: 20px;
+    color: rgb( 255, 255, 255 );
+}
+
+nav a:not(:last-child) {
+    margin-right: 16px;
+}
