@@ -14,6 +14,11 @@ const app = express();
 const port = 3000;
 
 
+// CONTROLLERS 
+const artifactsController = require( './controllers/artifacts.js' );
+const inventoryController = require( './controllers/inventory.js' );
+
+
 
 //////////////////////////////
 //     DB CONFIGURATION     //
@@ -39,8 +44,12 @@ mongoose.connection.once( 'open', () => {
 ////////////////////////
 
 
+app.use( express.json() );
 app.use( express.urlencoded( { extended: true } ));
+app.use( express.static( 'public' ) );
 app.use( methodOverride( '_method' ) );
+app.use( '/inventory', inventoryController );
+app.use( '/inventory/artifacts', artifactsController );
 
 
 
