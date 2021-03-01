@@ -15,6 +15,10 @@ body {
     box-sizing: border-box;
 }
 
+
+
+/* TEXT STYLES */
+
 a {
     font-weight: 700;
     text-decoration: none;
@@ -91,4 +95,7 @@ footer a {
 
 .content {
     flex: 1 0 auto;
+    width: 80%;
+    max-width: 1200px;
+    margin: 32px auto 48px;
 }
