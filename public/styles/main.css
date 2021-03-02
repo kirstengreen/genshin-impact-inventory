@@ -156,6 +156,11 @@ footer a {
 
 /* FORM STYLES */
 
+select, input {
+    margin: 4px 0 16px
+    /* padding: 8px 16px; */
+}
+
 .form-content {
     padding: 24px;
     background-color: rgb( 255, 255, 255 );
@@ -164,6 +169,18 @@ footer a {
 }
 
 .basic-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.stat-couple {
+    display: flex;
+    flex-direction: row;
+}
+
+.stat-type, .stat-number {
     display: flex;
     flex-direction: column;
 }

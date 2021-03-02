@@ -33,10 +33,18 @@
                     <select name="type" required >
                         <%- include ('../partials/forms/artifact-type.ejs') %>
                     </select>
-                    <label for="mainStat"><strong>Main Stat:</strong> (required)</label> 
-                    <select name="mainStat" required >
-                        <%- include ('../partials/forms/artifact-mainstats.ejs') %>
-                    </select>
+                    <div class="stat-couple">
+                        <div class="stat-type">
+                            <label for="mainStat.statType"><strong>Main Stat:</strong> (required)</label> 
+                            <select name="mainStat.statType" required >
+                                <%- include ('../partials/forms/artifact-mainstats.ejs') %>
+                            </select>
+                        </div>
+                        <div class="stat-number">
+                            <label for="mainStat.statNumber"><strong>Main Stat Number:</strong> (required)</label> 
+                            <input type="text" name="mainStat.statNumber" required />
+                        </div>
+                    </div>
                     <div class="form-actions">
                         <input class="primary" type="submit" value="Create Artifact" />
                     </div>
