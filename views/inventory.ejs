@@ -13,10 +13,15 @@
         <%- include ('./partials/inventory-nav.ejs') %>
         <div class="category-content">
             <div class="category-header">
-                <h2>Summary</h2>
+                <h2>Categories</h2>
             </div>
             <div class="item-grid">
-
+                <div class="grid-item">
+                    <h3>Artifacts</h3>
+                    <form action="/inventory/artifacts/">
+                        <input class="primary" type="submit" value="View Artifacts" />
+                    </form>
+                </div>
             </div>
         </div>
     </div>

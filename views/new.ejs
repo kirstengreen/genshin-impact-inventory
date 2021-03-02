@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- HEAD PARTIAL -->
+    <%- include ('./partials/head.ejs') %>
+</head>
+<body>
+    <!-- HEADER PARTIAL -->
+    <%- include ('./partials/header.ejs') %>
+    <div class="content">
+        <h1>Inventory</h1>
+        <!-- INVENTORY NAV -->
+        <%- include ('./partials/inventory-nav.ejs') %>
+        <div class="category-content">
+            <div class="category-header">
+                <h2>New Artifact</h2>
+            </div>
+            <div class="form-content">
+                <form class="basic-form" action="#" method="POST">
+                    <label for="set">Set:</label> 
+                    <input type="text" name="set" />
+                    <div class="form-actions">
+                        <input class="primary" type="submit" value="Create Artifact" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- FOOTER PARTIAL -->
+    <%- include ('./partials/footer.ejs') %>
+</body>
+</html>

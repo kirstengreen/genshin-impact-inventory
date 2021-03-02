@@ -45,6 +45,16 @@ router.get( '/', ( req, res ) => {
 });
 
 
+// NEW
+// Get
+
+router.get( '/new', ( req, res) => {
+    res.render( 'new.ejs', {
+        tabTitle: 'New Artifact',
+    });
+});
+
+
 // SHOW
 // Get
 
