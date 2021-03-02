@@ -37,7 +37,7 @@ router.get('/seed', async (req, res) => {
 
 router.get( '/', ( req, res ) => {
     Artifact.find( {}, ( error, artifact ) => {
-        res.render( 'artifacts.ejs', { 
+        res.render( 'artifacts/index.ejs', { 
             tabTitle: 'Artifacts',
             allArtifacts: artifact
         });
@@ -49,7 +49,7 @@ router.get( '/', ( req, res ) => {
 // Get
 
 router.get( '/new', ( req, res) => {
-    res.render( 'new.ejs', {
+    res.render( 'artifacts/new.ejs', {
         tabTitle: 'New Artifact',
     });
 });
@@ -60,7 +60,7 @@ router.get( '/new', ( req, res) => {
 
 router.get( '/:idOfArtifact', ( req, res ) => {
     Artifact.findById( req.params.idOfArtifact, ( error, artifact ) => {
-        res.render( 'show.ejs', {
+        res.render( 'artifacts/show.ejs', {
             tabTitle: 'Artifact Details',
             artifact: artifact
         });

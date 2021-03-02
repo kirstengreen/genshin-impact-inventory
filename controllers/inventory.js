@@ -18,7 +18,7 @@ const router = express.Router();
 // Get
 
 router.get( '/', ( req, res ) => {
-    res.render( 'inventory.ejs', { 
+    res.render( 'index.ejs', { 
         tabTitle: 'Home'
     });
 });
