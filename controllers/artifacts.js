@@ -9,7 +9,7 @@ const router = express.Router();
 
 
 //DATA MODELS
-
+const Artifact = require( '../models/artifacts.js' );
 
 
 ////////////////////
