@@ -13,7 +13,7 @@ module.exports = [
             statNumber: 37 
         },
         subStat2: {
-            statType: 'CRIT DMG',
+            statType: 'CRIT DMG %',
             statNumber: 14.8 
         },
         subStat3: {
@@ -40,7 +40,7 @@ module.exports = [
             statNumber: 9.9 
         },
         subStat2: {
-            statType: 'CRIT Rate',
+            statType: 'CRIT Rate %',
             statNumber: 3.9 
         },
         subStat3: {
@@ -48,7 +48,7 @@ module.exports = [
             statNumber: 14.6 
         },
         subStat4: {
-            statType: 'CRIT DMG',
+            statType: 'CRIT DMG %',
             statNumber: 14.0 
         },
         equippedTo: 'Zhongli'
@@ -67,11 +67,11 @@ module.exports = [
             statNumber: 19 
         },
         subStat2: {
-            statType: 'CRIT Rate',
+            statType: 'CRIT Rate %',
             statNumber: 13.6 
         },
         subStat3: {
-            statType: 'CRIT DMG',
+            statType: 'CRIT DMG %',
             statNumber: 7.8 
         },
         subStat4: {
@@ -86,7 +86,7 @@ module.exports = [
         level: 20,
         type: 'Goblet of Eonothem',
         mainStat: {
-            statType: 'Physical DMG Bonus',
+            statType: 'Physical DMG Bonus %',
             statNumber: 58.3
         },
         subStat1: {
@@ -94,15 +94,15 @@ module.exports = [
             statNumber: 9.9 
         },
         subStat2: {
-            statType: 'CRIT DMG',
+            statType: 'CRIT DMG %',
             statNumber: 12.4 
         },
         subStat3: {
-            statType: 'Energy Recharge',
+            statType: 'Energy Recharge %',
             statNumber: 6.5 
         },
         subStat4: {
-            statType: 'CRIT Rate',
+            statType: 'CRIT Rate %',
             statNumber: 10.9 
         },
         equippedTo: 'Zhongli'
@@ -113,7 +113,7 @@ module.exports = [
         level: 20,
         type: 'Circlet of Logos',
         mainStat: {
-            statType: 'CRIT RATE',
+            statType: 'CRIT RATE %',
             statNumber: 31.1
         },
         subStat1: {
@@ -121,15 +121,15 @@ module.exports = [
             statNumber: 19 
         },
         subStat2: {
-            statType: 'CRIT DMG',
+            statType: 'CRIT DMG %',
             statNumber: 14.0 
         },
         subStat3: {
-            statType: 'Energy Recharge',
+            statType: 'Energy Recharge %',
             statNumber: 9.1 
         },
         subStat4: {
-            statType: 'ATK',
+            statType: 'ATK %',
             statNumber: 15.2 
         },
         equippedTo: 'Zhongli'
