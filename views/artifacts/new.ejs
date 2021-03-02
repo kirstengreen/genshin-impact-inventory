@@ -29,6 +29,10 @@
                     <select name="level" >
                         <%- include ('../partials/forms/artifact-level.ejs') %>
                     </select>
+                    <label for="type"><strong>Type:</strong> (required)</label> 
+                    <select name="type" >
+                        <%- include ('../partials/forms/artifact-type.ejs') %>
+                    </select>
                     <div class="form-actions">
                         <input class="primary" type="submit" value="Create Artifact" />
                     </div>
