@@ -21,6 +21,10 @@
                     <select name="set" >
                         <%- include ('../partials/forms/artifact-sets.ejs') %>
                     </select>
+                    <label for="rarity"><strong>Rarity:</strong> (required)</label> 
+                    <select name="rarity" >
+                        <%- include ('../partials/forms/artifact-rarity.ejs') %>
+                    </select>
                     <div class="form-actions">
                         <input class="primary" type="submit" value="Create Artifact" />
                     </div>
