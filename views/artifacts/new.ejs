@@ -18,20 +18,24 @@
             <div class="form-content">
                 <form class="basic-form" action="#" method="POST">
                     <label for="set"><strong>Set:</strong> (required)</label> 
-                    <select name="set" >
+                    <select name="set" required >
                         <%- include ('../partials/forms/artifact-sets.ejs') %>
                     </select>
                     <label for="rarity"><strong>Rarity:</strong> (required)</label> 
-                    <select name="rarity" >
+                    <select name="rarity" required >
                         <%- include ('../partials/forms/artifact-rarity.ejs') %>
                     </select>
                     <label for="level"><strong>Level:</strong> (required)</label> 
-                    <select name="level" >
+                    <select name="level" required >
                         <%- include ('../partials/forms/artifact-level.ejs') %>
                     </select>
                     <label for="type"><strong>Type:</strong> (required)</label> 
-                    <select name="type" >
+                    <select name="type" required >
                         <%- include ('../partials/forms/artifact-type.ejs') %>
+                    </select>
+                    <label for="mainStat"><strong>Main Stat:</strong> (required)</label> 
+                    <select name="mainStat" required >
+                        <%- include ('../partials/forms/artifact-mainstats.ejs') %>
                     </select>
                     <div class="form-actions">
                         <input class="primary" type="submit" value="Create Artifact" />
