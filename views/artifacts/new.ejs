@@ -16,7 +16,7 @@
                 <h2>New Artifact</h2>
             </div>
             <div class="form-content">
-                <form class="basic-form" action="#" method="POST">
+                <form class="basic-form" action="/inventory/artifacts" method="POST">
                     <label for="set"><strong>Set:</strong> (required)</label> 
                     <select name="set" required >
                         <%- include ('../partials/forms/artifact-sets.ejs') %>
@@ -35,62 +35,62 @@
                     </select>
                     <div class="stat-couple">
                         <div class="stat-type">
-                            <label for="mainStat.statType"><strong>Main Stat:</strong> (required)</label> 
-                            <select name="mainStat.statType" required >
+                            <label for="mainStat[statType]"><strong>Main Stat:</strong> (required)</label> 
+                            <select name="mainStat[statType]" required >
                                 <%- include ('../partials/forms/artifact-mainstats.ejs') %>
                             </select>
                         </div>
                         <div class="stat-number">
-                            <label for="mainStat.statNumber"><strong>Main Stat Number:</strong> (required)</label> 
-                            <input type="text" name="mainStat.statNumber" required />
+                            <label for="mainStat[statNumber]"><strong>Main Stat Number:</strong> (required)</label> 
+                            <input type="text" name="mainStat[statNumber]" required />
                         </div>
                     </div>
                     <div class="stat-couple">
                         <div class="stat-type">
-                            <label for="mainStat.statType"><strong>Sub Stat:</strong></label> 
-                            <select name="mainStat.statType" >
+                            <label for="subStat1[statType]"><strong>Sub Stat:</strong></label> 
+                            <select name="subStat1[statType]" >
                                 <%- include ('../partials/forms/artifact-substats.ejs') %>
                             </select>
                         </div>
                         <div class="stat-number">
-                            <label for="mainStat.statNumber"><strong>Sub Stat Number:</strong></label> 
-                            <input type="text" name="mainStat.statNumber" />
+                            <label for="subStat1[statNumber]"><strong>Sub Stat Number:</strong></label> 
+                            <input type="text" name="subStat1[statNumber]" />
                         </div>
                     </div>
                     <div class="stat-couple">
                         <div class="stat-type">
-                            <label for="mainStat.statType"><strong>Sub Stat:</strong></label> 
-                            <select name="mainStat.statType" >
+                            <label for="subStat2[statType]"><strong>Sub Stat:</strong></label> 
+                            <select name="subStat2[statType]" >
                                 <%- include ('../partials/forms/artifact-substats.ejs') %>
                             </select>
                         </div>
                         <div class="stat-number">
-                            <label for="mainStat.statNumber"><strong>Sub Stat Number:</strong></label> 
-                            <input type="text" name="mainStat.statNumber" />
+                            <label for="subStat2[statNumber]"><strong>Sub Stat Number:</strong></label> 
+                            <input type="text" name="subStat2[statNumber]" />
                         </div>
                     </div>
                     <div class="stat-couple">
                         <div class="stat-type">
-                            <label for="mainStat.statType"><strong>Sub Stat:</strong></label> 
-                            <select name="mainStat.statType" >
+                            <label for="subStat3[statType]"><strong>Sub Stat:</strong></label> 
+                            <select name="subStat3[statType]" >
                                 <%- include ('../partials/forms/artifact-substats.ejs') %>
                             </select>
                         </div>
                         <div class="stat-number">
-                            <label for="mainStat.statNumber"><strong>Sub Stat Number:</strong></label> 
-                            <input type="text" name="mainStat.statNumber" />
+                            <label for="subStat3[statNumber]"><strong>Sub Stat Number:</strong></label> 
+                            <input type="text" name="subStat3[statNumber]" />
                         </div>
                     </div>
                     <div class="stat-couple">
                         <div class="stat-type">
-                            <label for="mainStat.statType"><strong>Sub Stat:</strong></label> 
-                            <select name="mainStat.statType" >
+                            <label for="subStat4[statType]"><strong>Sub Stat:</strong></label> 
+                            <select name="subStat4[statType]" >
                                 <%- include ('../partials/forms/artifact-substats.ejs') %>
                             </select>
                         </div>
                         <div class="stat-number">
-                            <label for="mainStat.statNumber"><strong>Sub Stat  Number:</strong></label> 
-                            <input type="text" name="mainStat.statNumber" />
+                            <label for="subStat4[statNumber]"><strong>Sub Stat Number:</strong></label> 
+                            <input type="text" name="subStat4[statNumber]" />
                         </div>
                     </div>
                     <div class="form-actions">

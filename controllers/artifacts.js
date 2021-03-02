@@ -55,6 +55,16 @@ router.get( '/new', ( req, res) => {
 });
 
 
+// GREATE
+// Post
+router.post( '/', ( req, res ) => {
+    Artifact.create( req.body, ( error, createdArtifact ) => {
+        res.redirect( '/inventory/artifacts' );
+    });
+});
+
+
+
 // SHOW
 // Get
 
