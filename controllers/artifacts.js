@@ -64,7 +64,6 @@ router.post( '/', ( req, res ) => {
 });
 
 
-
 // SHOW
 // Get
 
@@ -75,7 +74,20 @@ router.get( '/:idOfArtifact', ( req, res ) => {
             artifact: artifact
         });
     });
-}); 
+});
+
+
+// EDIT
+// Get
+
+router.get( '/:idOfArtifact/edit', ( req, res ) => {
+    Artifact.findById( req.params.idOfArtifact, ( error, artifact ) => {
+        res.render( 'artifacts/edit.ejs', {
+            tabTitle: 'Edit Artifact',
+            artifact: artifact
+        });
+    });
+});
 
 
 

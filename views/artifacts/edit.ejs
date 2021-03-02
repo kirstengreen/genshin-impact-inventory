@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- HEAD PARTIAL -->
+    <%- include ('../partials/head.ejs') %>
+</head>
+<body>
+    <!-- HEADER PARTIAL -->
+    <%- include ('../partials/header.ejs') %>
+    <div class="content">
+        <h1>Inventory</h1>
+        <!-- INVENTORY NAV -->
+        <%- include ('../partials/inventory-nav.ejs') %>
+        <div class="category-content">
+            <div class="category-header">
+                <h2>Edit Artifact</h2>
+            </div>
+            <div class="form-content">
+                <form class="basic-form" action="/inventory/artifacts/<%= artifact.id %>?_method=PUT" method="POST">
+                    <label for="set"><strong>Set:</strong> (required)</label> 
+                    <select name="set" required >
+                        <%- include ('../partials/forms/artifact-sets.ejs') %>
+                    </select>
+                    <label for="rarity"><strong>Rarity:</strong> (required)</label> 
+                    <select name="rarity" required >
+                        <%- include ('../partials/forms/artifact-rarity.ejs') %>
+                    </select>
+                    <label for="level"><strong>Level:</strong> (required)</label> 
+                    <select name="level" required >
+                        <%- include ('../partials/forms/artifact-level.ejs') %>
+                    </select>
+                    <label for="type"><strong>Type:</strong> (required)</label> 
+                    <select name="type" required >
+                        <%- include ('../partials/forms/artifact-type.ejs') %>
+                    </select>
+                    <div class="stat-couple">
+                        <div class="stat-type">
+                            <label for="mainStat[statType]"><strong>Main Stat:</strong> (required)</label> 
+                            <select name="mainStat[statType]" required >
+                                <%- include ('../partials/forms/artifact-mainstats.ejs') %>
+                            </select>
+                        </div>
+                        <div class="stat-number">
+                            <label for="mainStat[statNumber]"><strong>Main Stat Number:</strong> (required)</label> 
+                            <input type="text" name="mainStat[statNumber]" required />
+                        </div>
+                    </div>
+                    <div class="stat-couple">
+                        <div class="stat-type">
+                            <label for="subStat1[statType]"><strong>Sub Stat:</strong></label> 
+                            <select name="subStat1[statType]" >
+                                <%- include ('../partials/forms/artifact-substats.ejs') %>
+                            </select>
+                        </div>
+                        <div class="stat-number">
+                            <label for="subStat1[statNumber]"><strong>Sub Stat Number:</strong></label> 
+                            <input type="text" name="subStat1[statNumber]" />
+                        </div>
+                    </div>
+                    <div class="stat-couple">
+                        <div class="stat-type">
+                            <label for="subStat2[statType]"><strong>Sub Stat:</strong></label> 
+                            <select name="subStat2[statType]" >
+                                <%- include ('../partials/forms/artifact-substats.ejs') %>
+                            </select>
+                        </div>
+                        <div class="stat-number">
+                            <label for="subStat2[statNumber]"><strong>Sub Stat Number:</strong></label> 
+                            <input type="text" name="subStat2[statNumber]" />
+                        </div>
+                    </div>
+                    <div class="stat-couple">
+                        <div class="stat-type">
+                            <label for="subStat3[statType]"><strong>Sub Stat:</strong></label> 
+                            <select name="subStat3[statType]" >
+                                <%- include ('../partials/forms/artifact-substats.ejs') %>
+                            </select>
+                        </div>
+                        <div class="stat-number">
+                            <label for="subStat3[statNumber]"><strong>Sub Stat Number:</strong></label> 
+                            <input type="text" name="subStat3[statNumber]" />
+                        </div>
+                    </div>
+                    <div class="stat-couple">
+                        <div class="stat-type">
+                            <label for="subStat4[statType]"><strong>Sub Stat:</strong></label> 
+                            <select name="subStat4[statType]" >
+                                <%- include ('../partials/forms/artifact-substats.ejs') %>
+                            </select>
+                        </div>
+                        <div class="stat-number">
+                            <label for="subStat4[statNumber]"><strong>Sub Stat Number:</strong></label> 
+                            <input type="text" name="subStat4[statNumber]" />
+                        </div>
+                    </div>
+                    <label for="equippedTo"><strong>Equipped To:</strong></label> 
+                    <select name="equippedTo" >
+                        <%- include ('../partials/forms/characters.ejs') %>
+                    </select>
+                    <div class="form-actions">
+                        <input class="primary" type="submit" value="Edit Artifact" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- FOOTER PARTIAL -->
+    <%- include ('../partials/footer.ejs') %>
+</body>
+</html>
