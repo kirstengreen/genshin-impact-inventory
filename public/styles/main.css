@@ -19,6 +19,15 @@ body {
 
 /* TEXT STYLES */
 
+
+h1 {
+    margin-bottom: 16px;
+}
+
+h2 {
+    margin-bottom: 16px;
+}
+
 a {
     font-weight: 700;
     text-decoration: none;
@@ -98,4 +107,12 @@ footer a {
     width: 80%;
     max-width: 1200px;
     margin: 32px auto 48px;
+}
+
+.inventory-nav {
+    margin: 16px auto;
+}
+
+.inventory-nav a:not(:last-child) {
+    margin-right: 24px;
 }
