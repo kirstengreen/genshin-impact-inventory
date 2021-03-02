@@ -17,8 +17,10 @@
             </div>
             <div class="form-content">
                 <form class="basic-form" action="#" method="POST">
-                    <label for="set">Set:</label> 
-                    <input type="text" name="set" />
+                    <label for="set"><strong>Set:</strong> (required)</label> 
+                    <select name="set" >
+                        <%- include ('../partials/forms/artifact-sets.ejs') %>
+                    </select>
                     <div class="form-actions">
                         <input class="primary" type="submit" value="Create Artifact" />
                     </div>
