@@ -2,13 +2,13 @@
 const mongoose = require( 'mongoose' );
 
 const artifactSchema = new mongoose.Schema({
-    set: String,
-    quality: String,
-    level: Number,
-    type: String,
+    set: { type: String, required: true },
+    quality: { type: String, required: true },
+    level: { type: Number, required: true },
+    type: { type: String, required: true },
     mainStat: {
-        statType: String,
-        statNumber: Number
+        statType: { type: String, required: true },
+        statNumber: { type: Number, required: true }
     },
     subStat1: {
         statType: String,
