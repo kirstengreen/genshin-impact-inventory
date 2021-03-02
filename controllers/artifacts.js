@@ -36,8 +36,11 @@ router.get('/seed', async (req, res) => {
 // Get
 
 router.get( '/', ( req, res ) => {
-    res.render( 'artifacts.ejs', { 
-        tabTitle: 'Artifacts'
+    Artifact.find( {}, ( error, artifact ) => {
+        res.render( 'artifacts.ejs', { 
+            tabTitle: 'Artifacts',
+            allArtifacts: artifact
+        });
     });
 });
 

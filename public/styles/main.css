@@ -19,7 +19,6 @@ body {
 
 /* TEXT STYLES */
 
-
 h1 {
     margin-bottom: 16px;
 }
@@ -115,4 +114,34 @@ footer a {
 
 .inventory-nav a:not(:last-child) {
     margin-right: 24px;
+}
+
+.item-grid {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    grid-gap: 32px;
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-grow: 1;
+    width: 250px;
+    padding: 24px;
+    background-color: rgb( 255, 255, 255 );
+    box-shadow: 2px 2px 3px rgba( 51, 51, 51, .3 );
+    border-radius: 5px;
+}
+
+.grid-item ul {
+    padding: 0;
+}
+
+.grid-item ul li {
+    list-style-type:none;
 }
