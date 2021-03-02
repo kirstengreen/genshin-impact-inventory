@@ -45,5 +45,18 @@ router.get( '/', ( req, res ) => {
 });
 
 
+// SHOW
+// Get
+
+router.get( '/:idOfArtifact', ( req, res ) => {
+    Artifact.findById( req.params.idOfArtifact, ( error, artifact ) => {
+        res.render( 'show.ejs', {
+            tabTitle: 'Artifact Details',
+            artifact: artifact
+        });
+    });
+}); 
+
+
 
 module.exports = router;

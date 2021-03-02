@@ -12,7 +12,13 @@
         <!-- INVENTORY NAV -->
         <%- include ('./partials/inventory-nav.ejs') %>
         <div class="category-content">
-            <h2>Artifacts</h2>
+            <div class="category-header">
+                <h2>Artifacts</h2>
+                <form action="#">
+                    <input class="primary" type="submit" value="New Artifact" />
+                </form>
+            </div>
+            </div>
             <div class="item-grid">
                 <% for ( let i = 0; i < allArtifacts.length; i++) { %>
                 <div class="grid-item">
@@ -24,6 +30,9 @@
                         <li><strong>Main Stat:</strong> <%= allArtifacts[i].mainStat.statType %> - <%= allArtifacts[i].mainStat.statNumber %></li>
                         <li><strong>Equipped:</strong> <%= allArtifacts[i].equippedTo %></li>
                     </ul>
+                    <form action="/inventory/artifacts/<%= allArtifacts[i].id %>">
+                        <input class="primary" type="submit" value="View Details" />
+                    </form>
                 </div>
                 <% } %>
             </div>
