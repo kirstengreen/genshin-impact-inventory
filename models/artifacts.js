@@ -3,7 +3,7 @@ const mongoose = require( 'mongoose' );
 
 const artifactSchema = new mongoose.Schema({
     set: { type: String, required: true },
-    quality: { type: String, required: true },
+    rarity: { type: String, required: true },
     level: { type: Number, required: true },
     type: { type: String, required: true },
     mainStat: {
