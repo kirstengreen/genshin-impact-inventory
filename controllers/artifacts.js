@@ -20,8 +20,6 @@ const newArtifacts = require( '../models/seed.js' );
 
 
 // SEED ARTIFACT DATA
-// Get
-
 router.get('/seed', async (req, res) => {
     try {
       const seedItems = await Artifact.create( newArtifacts );
@@ -33,8 +31,6 @@ router.get('/seed', async (req, res) => {
 
 
 // INDEX
-// Get
-
 router.get( '/', ( req, res ) => {
     Artifact.find( {}, ( error, artifact ) => {
         res.render( 'artifacts/index.ejs', { 
@@ -46,8 +42,6 @@ router.get( '/', ( req, res ) => {
 
 
 // NEW
-// Get
-
 router.get( '/new', ( req, res) => {
     res.render( 'artifacts/new.ejs', {
         tabTitle: 'New Artifact',
@@ -55,8 +49,7 @@ router.get( '/new', ( req, res) => {
 });
 
 
-// GREATE
-// Post
+// CREATE
 router.post( '/', ( req, res ) => {
     Artifact.create( req.body, ( error, artifact ) => {
         res.redirect( '/inventory/artifacts' );
@@ -65,8 +58,6 @@ router.post( '/', ( req, res ) => {
 
 
 // SHOW
-// Get
-
 router.get( '/:idOfArtifact', ( req, res ) => {
     Artifact.findById( req.params.idOfArtifact, ( error, artifact ) => {
         res.render( 'artifacts/show.ejs', {
@@ -78,8 +69,6 @@ router.get( '/:idOfArtifact', ( req, res ) => {
 
 
 // EDIT
-// Get
-
 router.get( '/:idOfArtifact/edit', ( req, res ) => {
     Artifact.findById( req.params.idOfArtifact, ( error, artifact ) => {
         res.render( 'artifacts/edit.ejs', {
@@ -91,8 +80,6 @@ router.get( '/:idOfArtifact/edit', ( req, res ) => {
 
 
 // UPDATE
-// Put
-
 router.put( '/:idOfArtifact', ( req, res ) => {
     Artifact.findByIdAndUpdate( req.params.idOfArtifact, req.body, { new: true }, ( error, artifact ) =>{
         res.redirect( `/inventory/artifacts/${ req.params.idOfArtifact }` );
@@ -101,8 +88,6 @@ router.put( '/:idOfArtifact', ( req, res ) => {
 
 
 // DELETE
-// Delete
-
 router.delete( '/:idOfArtifact', ( req, res ) => {
     Artifact.findByIdAndRemove( req.params.idOfArtifact, ( error, artifact ) => {
         res.redirect( '/inventory/artifacts/' );

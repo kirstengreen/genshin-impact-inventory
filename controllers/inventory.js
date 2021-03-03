@@ -15,8 +15,6 @@ const router = express.Router();
 
 
 // INDEX
-// Get
-
 router.get( '/', ( req, res ) => {
     res.render( 'index.ejs', { 
         tabTitle: 'Home'
