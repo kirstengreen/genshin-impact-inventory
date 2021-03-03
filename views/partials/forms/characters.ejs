@@ -1,30 +1,183 @@
-<option value="None">None</option>
-<option value="Albedo">Albedo</option>
-<option value="Barbara">Barbara</option>
-<option value="Beidou">Beidou</option>
-<option value="Bennett">Bennett</option>
-<option value="Chongyun">Chongyun</option>
-<option value="Diluc">Diluc</option>
-<option value="Diona">Diona</option>
-<option value="Fischl">Fischl</option>
-<option value="Ganyu">Ganyu</option>
-<option value="Hu Tao">Hu Tao</option>
-<option value="Jean">Jean</option>
-<option value="Kaeya">Kaeya</option>
-<option value="Keqing">Keqing</option>
-<option value="Klee">Klee</option>
-<option value="Lisa">Lisa</option>
-<option value="Mona">Mona</option>
-<option value="Ningguang">Ningguang</option>
-<option value="Noelle">Noelle</option>
-<option value="Qiqi">Qiqi</option>
-<option value="Razor">Razor</option>
-<option value="Sucrose">Sucrose</option>
-<option value="Tartaglia">Tartaglia</option>
-<option value="Traveler">Traveler</option>
-<option value="Venti">Venti</option>
-<option value="Xiangling">Xiangling</option>
-<option value="Xiao">Xiao</option>
-<option value="Xingqiu">Xingqiu</option>
-<option value="Xinyan">Xinyan</option>
-<option value="Zhongli">Zhongli</option>
+<% if ( tabTitle === 'New Artifact' ) { %>
+    <option value="None">None</option>
+    <option value="Albedo">Albedo</option>
+    <option value="Barbara">Barbara</option>
+    <option value="Beidou">Beidou</option>
+    <option value="Bennett">Bennett</option>
+    <option value="Chongyun">Chongyun</option>
+    <option value="Diluc">Diluc</option>
+    <option value="Diona">Diona</option>
+    <option value="Fischl">Fischl</option>
+    <option value="Ganyu">Ganyu</option>
+    <option value="Hu Tao">Hu Tao</option>
+    <option value="Jean">Jean</option>
+    <option value="Kaeya">Kaeya</option>
+    <option value="Keqing">Keqing</option>
+    <option value="Klee">Klee</option>
+    <option value="Lisa">Lisa</option>
+    <option value="Mona">Mona</option>
+    <option value="Ningguang">Ningguang</option>
+    <option value="Noelle">Noelle</option>
+    <option value="Qiqi">Qiqi</option>
+    <option value="Razor">Razor</option>
+    <option value="Sucrose">Sucrose</option>
+    <option value="Tartaglia">Tartaglia</option>
+    <option value="Traveler">Traveler</option>
+    <option value="Venti">Venti</option>
+    <option value="Xiangling">Xiangling</option>
+    <option value="Xiao">Xiao</option>
+    <option value="Xingqiu">Xingqiu</option>
+    <option value="Xinyan">Xinyan</option>
+    <option value="Zhongli">Zhongli</option>
+<% } else if ( tabTitle === 'Edit Artifact' ) { %>
+    <option value="None"
+        <% if ( artifact.equippedTo ===  "None" ) { %>
+            selected
+        <% } %> 
+    >None</option>
+    <option value="Albedo"
+        <% if ( artifact.equippedTo ===  "Albedo" ) { %>
+            selected
+        <% } %> 
+    >Albedo</option>
+    <option value="Barbara"
+        <% if ( artifact.equippedTo ===  "Barbara" ) { %>
+            selected
+        <% } %> 
+    >Barbara</option>
+    <option value="Beidou"
+        <% if ( artifact.equippedTo ===  "Beidou" ) { %>
+            selected
+        <% } %> 
+    >Beidou</option>
+    <option value="Bennett"
+        <% if ( artifact.equippedTo ===  "Bennett" ) { %>
+            selected
+        <% } %> 
+    >Bennett</option>
+    <option value="Chongyun"
+        <% if ( artifact.equippedTo ===  "Chongyun" ) { %>
+            selected
+        <% } %>
+    >Chongyun</option>
+    <option value="Diluc"
+        <% if ( artifact.equippedTo ===  "Diluc" ) { %>
+            selected
+        <% } %>
+    >Diluc</option>
+    <option value="Diona"
+        <% if ( artifact.equippedTo ===  "Diona" ) { %>
+            selected
+        <% } %>
+    >Diona</option>
+    <option value="Fischl"
+        <% if ( artifact.equippedTo ===  "Fischl" ) { %>
+            selected
+        <% } %>
+    >Fischl</option>
+    <option value="Ganyu"
+        <% if ( artifact.equippedTo ===  "Ganyu" ) { %>
+            selected
+        <% } %>
+    >Ganyu</option>
+    <option value="Hu Tao"
+        <% if ( artifact.equippedTo ===  "Hu Tao" ) { %>
+            selected
+        <% } %>
+    >Hu Tao</option>
+    <option value="Jean"
+        <% if ( artifact.equippedTo ===  "Jean" ) { %>
+            selected
+        <% } %>
+    >Jean</option>
+    <option value="Kaeya"
+        <% if ( artifact.equippedTo ===  "Kaeya" ) { %>
+            selected
+        <% } %>
+    >Kaeya</option>
+    <option value="Keqing"
+        <% if ( artifact.equippedTo ===  "Keqing" ) { %>
+            selected
+        <% } %>
+    >Keqing</option>
+    <option value="Klee"
+        <% if ( artifact.equippedTo ===  "Klee" ) { %>
+            selected
+        <% } %>
+    >Klee</option>
+    <option value="Lisa"
+        <% if ( artifact.equippedTo ===  "Lisa" ) { %>
+            selected
+        <% } %>
+    >Lisa</option>
+    <option value="Mona"
+        <% if ( artifact.equippedTo ===  "Mona" ) { %>
+            selected
+        <% } %>
+    >Mona</option>
+    <option value="Ningguang"
+        <% if ( artifact.equippedTo ===  "Ningguang" ) { %>
+            selected
+        <% } %>
+    >Ningguang</option>
+    <option value="Noelle"
+        <% if ( artifact.equippedTo ===  "Noelle" ) { %>
+            selected
+        <% } %>
+    >Noelle</option>
+    <option value="Qiqi"
+        <% if ( artifact.equippedTo ===  "Qiqi" ) { %>
+            selected
+        <% } %>
+    >Qiqi</option>
+    <option value="Razor"
+        <% if ( artifact.equippedTo ===  "Razor" ) { %>
+            selected
+        <% } %>
+    >Razor</option>
+    <option value="Sucrose"
+        <% if ( artifact.equippedTo ===  "Sucrose" ) { %>
+            selected
+        <% } %>
+    >Sucrose</option>
+    <option value="Tartaglia"
+        <% if ( artifact.equippedTo ===  "Tartaglia" ) { %>
+            selected
+        <% } %>
+    >Tartaglia</option>
+    <option value="Traveler"
+        <% if ( artifact.equippedTo ===  "Traveler" ) { %>
+            selected
+        <% } %>
+    >Traveler</option>
+    <option value="Venti"
+        <% if ( artifact.equippedTo ===  "Venti" ) { %>
+            selected
+        <% } %>
+    >Venti</option>
+    <option value="Xiangling"
+        <% if ( artifact.equippedTo ===  "Xiangling" ) { %>
+            selected
+        <% } %>
+    >Xiangling</option>
+    <option value="Xiao"
+        <% if ( artifact.equippedTo ===  "Xiao" ) { %>
+            selected
+        <% } %>
+    >Xiao</option>
+    <option value="Xingqiu"
+        <% if ( artifact.equippedTo ===  "Xingqiu" ) { %>
+            selected
+        <% } %>
+    >Xingqiu</option>
+    <option value="Xinyan"
+        <% if ( artifact.equippedTo ===  "Xinyan" ) { %>
+            selected
+        <% } %>
+    >Xinyan</option>
+    <option value="Zhongli"
+        <% if ( artifact.equippedTo ===  "Zhongli" ) { %>
+            selected
+        <% } %>
+    >Zhongli</option>    
+<% } %>

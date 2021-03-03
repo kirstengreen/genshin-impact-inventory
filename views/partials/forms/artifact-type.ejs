@@ -1,5 +1,33 @@
-<option value="Flower of Life">Flower of Life</option>
-<option value="Plume of Death">Plume of Death</option>
-<option value="Sands of Eon">Sands of Eon</option>
-<option value="Goblet of Eonothem">Goblet of Eonothem</option>
-<option value="Circlet of Logos">Circlet of Logos</option>
+<% if ( tabTitle === 'New Artifact' ) { %>
+    <option value="Flower of Life">Flower of Life</option>
+    <option value="Plume of Death">Plume of Death</option>
+    <option value="Sands of Eon">Sands of Eon</option>
+    <option value="Goblet of Eonothem">Goblet of Eonothem</option>
+    <option value="Circlet of Logos">Circlet of Logos</option>
+<% } else if ( tabTitle === 'Edit Artifact' ) { %>
+    <option value="Flower of Life"
+        <% if ( artifact.type ===  "Flower of Life" ) { %>
+            selected
+        <% } %>
+    >Flower of Life</option>
+    <option value="Plume of Death"
+        <% if ( artifact.type ===  "Plume of Death" ) { %>
+            selected
+        <% } %> 
+    >Plume of Death</option>
+    <option value="Sands of Eon"
+        <% if ( artifact.type ===  "Sands of Eon" ) { %>
+            selected
+        <% } %> 
+    >Sands of Eon</option>
+    <option value="Goblet of Eonothem"
+        <% if ( artifact.type ===  "Goblet of Eonothem" ) { %>
+            selected
+        <% } %> 
+    >Goblet of Eonothem</option>
+    <option value="Circlet of Logos"
+        <% if ( artifact.type ===  "Circlet of Logos" ) { %>
+            selected
+        <% } %>
+    >Circlet of Logos</option>
+<% } %>

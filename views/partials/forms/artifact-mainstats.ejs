@@ -1,17 +1,105 @@
-<option value="Anemo DMG Bonus %">Anemo DMG Bonus %</option>
-<option value="ATK">ATK</option>
-<option value="ATK %">ATK %</option>
-<option value="CRIT DMG %">CRIT DMG %</option>
-<option value="CRIT Rate %">CRIT Rate %</option>
-<option value="Cyro DMG Bonus %">Cyro DMG Bonus %</option>
-<option value="DEF %">DEF %</option>
-<option value="Electro DMG Bonus %">Electro DMG Bonus %</option>
-<option value="Elemental Mastery">Elemental Mastery</option>
-<option value="Energy Recharge %">Energy Recharge %</option>
-<option value="Geo DMG Bonus %">Geo DMG Bonus %</option>
-<option value="Healing Bonus %">Healing Bonus %</option>
-<option value="HP">HP</option>
-<option value="HP %">HP %</option>
-<option value="Hydro DMG Bonus %">Hydro DMG Bonus %</option>
-<option value="Physical DMG Bonus %">Physical DMG Bonus %</option>
-<option value="Pyro DMG Bonus %">Pyro DMG Bonus %</option>
+<% if ( tabTitle === 'New Artifact' ) { %>
+    <option value="Anemo DMG Bonus %">Anemo DMG Bonus %</option>
+    <option value="ATK">ATK</option>
+    <option value="ATK %">ATK %</option>
+    <option value="CRIT DMG %">CRIT DMG %</option>
+    <option value="CRIT Rate %">CRIT Rate %</option>
+    <option value="Cyro DMG Bonus %">Cyro DMG Bonus %</option>
+    <option value="DEF %">DEF %</option>
+    <option value="Electro DMG Bonus %">Electro DMG Bonus %</option>
+    <option value="Elemental Mastery">Elemental Mastery</option>
+    <option value="Energy Recharge %">Energy Recharge %</option>
+    <option value="Geo DMG Bonus %">Geo DMG Bonus %</option>
+    <option value="Healing Bonus %">Healing Bonus %</option>
+    <option value="HP">HP</option>
+    <option value="HP %">HP %</option>
+    <option value="Hydro DMG Bonus %">Hydro DMG Bonus %</option>
+    <option value="Physical DMG Bonus %">Physical DMG Bonus %</option>
+    <option value="Pyro DMG Bonus %">Pyro DMG Bonus %</option>
+<% } else if ( tabTitle === 'Edit Artifact' ) { %>
+    <option value="Anemo DMG Bonus %"
+        <% if ( artifact.mainStat.statType ===  "Anemo DMG Bonus %" ) { %>
+            selected
+        <% } %>
+    >Anemo DMG Bonus %</option>
+    <option value="ATK"
+        <% if ( artifact.mainStat.statType ===  "ATK" ) { %>
+            selected
+        <% } %>
+    >ATK</option>
+    <option value="ATK %"
+        <% if ( artifact.mainStat.statType ===  "ATK %" ) { %>
+            selected
+        <% } %>
+    >ATK %</option>
+    <option value="CRIT DMG %"
+        <% if ( artifact.mainStat.statType ===  "CRIT DMG %" ) { %>
+            selected
+        <% } %>
+    >CRIT DMG %</option>
+    <option value="CRIT Rate %"
+        <% if ( artifact.mainStat.statType ===  "CRIT Rate %" ) { %>
+            selected
+        <% } %>
+    >CRIT Rate %</option>
+    <option value="Cyro DMG Bonus %"
+        <% if ( artifact.mainStat.statType ===  "Cyro DMG Bonus %" ) { %>
+            selected
+        <% } %>
+    >Cyro DMG Bonus %</option>
+    <option value="DEF %"
+        <% if ( artifact.mainStat.statType ===  "DEF %" ) { %>
+            selected
+        <% } %>
+    >DEF %</option>
+    <option value="Electro DMG Bonus %"
+        <% if ( artifact.mainStat.statType ===  "Electro DMG Bonus %" ) { %>
+            selected
+        <% } %>
+    >Electro DMG Bonus %</option>
+    <option value="Elemental Mastery"
+        <% if ( artifact.mainStat.statType ===  "Elemental Mastery" ) { %>
+            selected
+        <% } %>
+    >Elemental Mastery</option>
+    <option value="Energy Recharge %"
+        <% if ( artifact.mainStat.statType ===  "Energy Recharge %" ) { %>
+            selected
+        <% } %>
+    >Energy Recharge %</option>
+    <option value="Geo DMG Bonus %"
+        <% if ( artifact.mainStat.statType ===  "Geo DMG Bonus %" ) { %>
+            selected
+        <% } %>
+    >Geo DMG Bonus %</option>
+    <option value="Healing Bonus %"
+        <% if ( artifact.mainStat.statType ===  "Healing Bonus %" ) { %>
+            selected
+        <% } %>
+    >Healing Bonus %</option>
+    <option value="HP"
+        <% if ( artifact.mainStat.statType ===  "HP" ) { %>
+            selected
+        <% } %>
+    >HP</option>
+    <option value="HP %"
+        <% if ( artifact.mainStat.statType ===  "HP %" ) { %>
+            selected
+        <% } %>
+    >HP %</option>
+    <option value="Hydro DMG Bonus %"
+        <% if ( artifact.mainStat.statType ===  "Hydro DMG Bonus %" ) { %>
+            selected
+        <% } %>
+    >Hydro DMG Bonus %</option>
+    <option value="Physical DMG Bonus %"
+        <% if ( artifact.mainStat.statType ===  "Physical DMG Bonus %" ) { %>
+            selected
+        <% } %>
+    >Physical DMG Bonus %</option>
+    <option value="Pyro DMG Bonus %"
+        <% if ( artifact.mainStat.statType ===  "Pyro DMG Bonus %" ) { %>
+            selected
+        <% } %>
+    >Pyro DMG Bonus %</option>
+<% } %>

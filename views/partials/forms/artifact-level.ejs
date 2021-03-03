@@ -1,3 +1,13 @@
-<% for ( let i = 0; i <= 20; i++ ) { %>
-    <option value="<%= i %>">+ <%= i %></option>
+<% if ( tabTitle === 'New Artifact' ) { %>
+    <% for ( let i = 0; i <= 20; i++ ) { %>
+        <option value="<%= i %>">+ <%= i %></option>
+    <% } %>
+<% } else if ( tabTitle === 'Edit Artifact' ) { %>
+    <% for ( let i = 0; i <= 20; i++ ) { %>
+        <option value="<%= i %>"
+            <% if ( artifact.level ===  i ) { %>
+                selected
+            <% } %>
+        >+ <%= i %></option>
+    <% } %>
 <% } %>
