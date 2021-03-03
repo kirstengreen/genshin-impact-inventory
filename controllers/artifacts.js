@@ -58,7 +58,7 @@ router.get( '/new', ( req, res) => {
 // GREATE
 // Post
 router.post( '/', ( req, res ) => {
-    Artifact.create( req.body, ( error, createdArtifact ) => {
+    Artifact.create( req.body, ( error, artifact ) => {
         res.redirect( '/inventory/artifacts' );
     });
 });
@@ -92,9 +92,20 @@ router.get( '/:idOfArtifact/edit', ( req, res ) => {
 
 // UPDATE
 // Put
+
 router.put( '/:idOfArtifact', ( req, res ) => {
     Artifact.findByIdAndUpdate( req.params.idOfArtifact, req.body, { new: true }, ( error, artifact ) =>{
         res.redirect( `/inventory/artifacts/${ req.params.idOfArtifact }` );
+    });
+});
+
+
+// DELETE
+// Delete
+
+router.delete( '/:idOfArtifact', ( req, res ) => {
+    Artifact.findByIdAndRemove( req.params.idOfArtifact, ( error, artifact ) => {
+        res.redirect( '/inventory/artifacts/' );
     });
 });
 
