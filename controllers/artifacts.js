@@ -90,5 +90,14 @@ router.get( '/:idOfArtifact/edit', ( req, res ) => {
 });
 
 
+// UPDATE
+// Put
+router.put( '/:idOfArtifact', ( req, res ) => {
+    Artifact.findByIdAndUpdate( req.params.idOfArtifact, req.body, { new: true }, ( error, artifact ) =>{
+        res.redirect( `/inventory/artifacts/${ req.params.idOfArtifact }` );
+    });
+});
+
+
 
 module.exports = router;
