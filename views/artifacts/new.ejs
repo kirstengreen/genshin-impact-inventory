@@ -7,13 +7,12 @@
 <body>
     <!-- HEADER PARTIAL -->
     <%- include ('../partials/header.ejs') %>
+    <!-- INVENTORY NAV -->
+    <%- include ('../partials/inventory-nav.ejs') %>
     <div class="content">
-        <h1>Inventory</h1>
-        <!-- INVENTORY NAV -->
-        <%- include ('../partials/inventory-nav.ejs') %>
         <div class="category-content">
             <div class="category-header">
-                <h2>New Artifact</h2>
+                <h1>New Artifact</h1>
             </div>
             <div class="form-content">
                 <form class="basic-form" action="/artifacts" method="POST">
