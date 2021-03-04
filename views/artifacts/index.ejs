@@ -20,18 +20,31 @@
             </div>
             <div class="item-grid">
                 <% for ( let i = 0; i < allArtifacts.length; i++) { %>
-                <div class="grid-item">
-                    <h3><%= allArtifacts[i].set %></h3>
-                    <ul>
-                        <li><strong>Type:</strong> <%= allArtifacts[i].type %></li>
-                        <li><strong>Rarity:</strong> <%= allArtifacts[i].rarity %></li>
-                        <li><strong>Level:</strong> <%= allArtifacts[i].level %></li>
-                        <li><strong>Main Stat:</strong> <%= allArtifacts[i].mainStat.statType %> - <%= allArtifacts[i].mainStat.statNumber %></li>
-                        <li><strong>Equipped:</strong> <%= allArtifacts[i].equippedTo %></li>
-                    </ul>
-                    <form action="/artifacts/<%= allArtifacts[i].id %>">
-                        <input class="primary" type="submit" value="View Details" />
-                    </form>
+                <div class="artifact-grid-item">
+                    <div class="artifact-item-header">
+                        <p class="artifact-set-text"><%= allArtifacts[i].set %></p>
+                        <p class="artifact-rarity-text"><%= allArtifacts[i].rarity %> <span class="star">&#9733;</span></p>
+                    </div>
+                    <div class="artifact-info">
+                        <div class="artifact-main-stats">
+                            <p class="artifact-level-text">+<%= allArtifacts[i].level %></p>
+                            <div>
+                                <p class="artifact-mainstat-text"><%= allArtifacts[i].mainStat.statType %> </p>
+                                <p class="artifact-mainstat-num-text"><%= allArtifacts[i].mainStat.statNumber %></p>
+                            </div>
+                        </div>
+                        <div class="artifact-type">
+                            <p class="artifact-type-text"><%= allArtifacts[i].type %></p>
+                        </div>
+                    </div>
+                    <div class="artifact-equipped-to">
+                        <p class="artifact-equipped-text"><strong>Equipped:</strong> <%= allArtifacts[i].equippedTo %></p>
+                    </div>
+                    <!-- <div class="artifact-actions">
+                        <form action="/artifacts/<%= allArtifacts[i].id %>">
+                            <input class="primary" type="submit" value="View Details" />
+                        </form>
+                    </div> -->
                 </div>
                 <% } %>
             </div>

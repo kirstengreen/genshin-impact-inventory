@@ -1,7 +1,7 @@
 module.exports = [
     {
         set: 'Archaic Petra',
-        rarity: '5 Star',
+        rarity: 5,
         level: 20,
         type: 'Flower of Life',
         mainStat: {
@@ -28,7 +28,7 @@ module.exports = [
     },
     {
         set: 'Archaic Petra',
-        rarity: '5 Star',
+        rarity: 5,
         level: 20,
         type: 'Plume of Death',
         mainStat: {
@@ -55,7 +55,7 @@ module.exports = [
     },
     {
         set: 'Blizzard Strayer',
-        rarity: '5 Star',
+        rarity: 5,
         level: 20,
         type: 'Sands of Eon',
         mainStat: {
@@ -82,7 +82,7 @@ module.exports = [
     },
     {
         set: 'Maiden Beloved',
-        rarity: '5 Star',
+        rarity: 5,
         level: 20,
         type: 'Goblet of Eonothem',
         mainStat: {
@@ -109,7 +109,7 @@ module.exports = [
     },
     {
         set: 'Blizzard Strayer',
-        rarity: '5 Star',
+        rarity: 5,
         level: 20,
         type: 'Circlet of Logos',
         mainStat: {
