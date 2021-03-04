@@ -12,7 +12,7 @@ require('dotenv').config();
 
 // CONFIGURATION
 const app = express();
-const port = process.env.port;
+const port = process.env.port || 3000;
 
 
 // CONTROLLERS 
@@ -26,7 +26,7 @@ const inventoryController = require( './controllers/inventory.js' );
 //////////////////////////////
 
 
-const mongoURI = process.env.mongoURI;
+const mongoURI = process.env.mongoURI || 'mongoURI=mongodb://localhost:27017/genshinImpactInventory';
 
 mongoose.connect( mongoURI , { 
     useNewUrlParser: true,
