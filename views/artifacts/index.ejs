@@ -14,7 +14,7 @@
         <div class="category-content">
             <div class="category-header">
                 <h2>Artifacts</h2>
-                <form action="/inventory/artifacts/new">
+                <form action="/artifacts/new">
                     <input class="primary" type="submit" value="New Artifact" />
                 </form>
             </div>
@@ -29,7 +29,7 @@
                         <li><strong>Main Stat:</strong> <%= allArtifacts[i].mainStat.statType %> - <%= allArtifacts[i].mainStat.statNumber %></li>
                         <li><strong>Equipped:</strong> <%= allArtifacts[i].equippedTo %></li>
                     </ul>
-                    <form action="/inventory/artifacts/<%= allArtifacts[i].id %>">
+                    <form action="/artifacts/<%= allArtifacts[i].id %>">
                         <input class="primary" type="submit" value="View Details" />
                     </form>
                 </div>

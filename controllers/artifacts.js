@@ -52,7 +52,7 @@ router.get( '/new', ( req, res) => {
 // CREATE
 router.post( '/', ( req, res ) => {
     Artifact.create( req.body, ( error, artifact ) => {
-        res.redirect( '/inventory/artifacts' );
+        res.redirect( '/artifacts' );
     });
 });
 
@@ -82,7 +82,7 @@ router.get( '/:idOfArtifact/edit', ( req, res ) => {
 // UPDATE
 router.put( '/:idOfArtifact', ( req, res ) => {
     Artifact.findByIdAndUpdate( req.params.idOfArtifact, req.body, { new: true }, ( error, artifact ) =>{
-        res.redirect( `/inventory/artifacts/${ req.params.idOfArtifact }` );
+        res.redirect( `/artifacts/${ req.params.idOfArtifact }` );
     });
 });
 
@@ -90,7 +90,7 @@ router.put( '/:idOfArtifact', ( req, res ) => {
 // DELETE
 router.delete( '/:idOfArtifact', ( req, res ) => {
     Artifact.findByIdAndRemove( req.params.idOfArtifact, ( error, artifact ) => {
-        res.redirect( '/inventory/artifacts/' );
+        res.redirect( '/artifacts/' );
     });
 });
 

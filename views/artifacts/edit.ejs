@@ -16,7 +16,7 @@
                 <h2>Edit Artifact</h2>
             </div>
             <div class="form-content">
-                <form class="basic-form" action="/inventory/artifacts/<%= artifact.id %>?_method=PUT" method="POST">
+                <form class="basic-form" action="/artifacts/<%= artifact.id %>?_method=PUT" method="POST">
                     <label for="set"><strong>Set:</strong> (required)</label> 
                     <select name="set" required >
                         <%- include ('../partials/forms/artifact-sets.ejs') %>

@@ -15,10 +15,10 @@
             <div class="category-header">
                 <h2>Artifact Details</h2>
                 <div class="item-options">
-                    <form action="/inventory/artifacts/<%= artifact.id %>/edit">
+                    <form action="/artifacts/<%= artifact.id %>/edit">
                         <input class="primary" type="submit" value="Edit Artifact" />
                     </form>
-                    <form action="/inventory/artifacts/<%= artifact.id %>?_method=DELETE" method="POST">
+                    <form action="/artifacts/<%= artifact.id %>?_method=DELETE" method="POST">
                         <input class="primary" type="submit" value="Delete Artifact" />
                     </form>
                 </div>

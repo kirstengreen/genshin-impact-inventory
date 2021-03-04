@@ -49,8 +49,8 @@ app.use( express.json() );
 app.use( express.urlencoded( { extended: true } ));
 app.use( express.static( 'public' ) );
 app.use( methodOverride( '_method' ) );
-app.use( '/inventory', inventoryController );
-app.use( '/inventory/artifacts', artifactsController );
+app.use( '/', inventoryController );
+app.use( '/artifacts', artifactsController );
 
 
 
