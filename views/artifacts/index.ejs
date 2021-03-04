@@ -33,42 +33,39 @@
                     rarity1-border
                 <% } %>
                 ">
-                    <div class="artifact-item-header
-                        <% if ( allArtifacts[i].rarity === 5) { %>
-                            rarity5
-                        <% } else if ( allArtifacts[i].rarity === 4 ) { %>
-                            rarity4
-                        <% } else if ( allArtifacts[i].rarity === 3 ) { %>
-                            rarity3
-                        <% } else if ( allArtifacts[i].rarity === 2 ) { %>
-                            rarity2
-                        <% } else if ( allArtifacts[i].rarity === 1 ) { %>
-                            rarity1
-                        <% } %>
-                    ">
-                        <p class="artifact-set-text"><%= allArtifacts[i].set %></p>
-                        <p class="artifact-rarity-text"><%= allArtifacts[i].rarity %> <span class="star">&#9733;</span></p>
-                    </div>
-                    <div class="artifact-info">
-                        <div class="artifact-main-stats">
-                            <p class="artifact-level-text">+ <%= allArtifacts[i].level %></p>
-                            <div>
-                                <p class="artifact-mainstat-text"><%= allArtifacts[i].mainStat.statType %> </p>
-                                <p class="artifact-mainstat-num-text"><%= allArtifacts[i].mainStat.statNumber %></p>
+                    <a class="artifact-link-content" href="/artifacts/<%= allArtifacts[i].id %>">
+                        <div class="artifact-item-header
+                            <% if ( allArtifacts[i].rarity === 5) { %>
+                                rarity5
+                            <% } else if ( allArtifacts[i].rarity === 4 ) { %>
+                                rarity4
+                            <% } else if ( allArtifacts[i].rarity === 3 ) { %>
+                                rarity3
+                            <% } else if ( allArtifacts[i].rarity === 2 ) { %>
+                                rarity2
+                            <% } else if ( allArtifacts[i].rarity === 1 ) { %>
+                                rarity1
+                            <% } %>
+                        ">
+                            <p class="artifact-set-text"><%= allArtifacts[i].set %></p>
+                            <p class="artifact-rarity-text"><%= allArtifacts[i].rarity %> <span class="star">&#9733;</span></p>
+                        </div>
+                        <div class="artifact-info">
+                            <div class="artifact-main-stats">
+                                <p class="artifact-level-text">+ <%= allArtifacts[i].level %></p>
+                                <div>
+                                    <p class="artifact-mainstat-text"><%= allArtifacts[i].mainStat.statType %> </p>
+                                    <p class="artifact-mainstat-num-text"><%= allArtifacts[i].mainStat.statNumber %></p>
+                                </div>
+                            </div>
+                            <div class="artifact-type">
+                                <p class="artifact-type-text"><%= allArtifacts[i].type %></p>
                             </div>
                         </div>
-                        <div class="artifact-type">
-                            <p class="artifact-type-text"><%= allArtifacts[i].type %></p>
+                        <div class="artifact-equipped-to">
+                            <p class="artifact-equipped-text"><strong>Equipped:</strong> <%= allArtifacts[i].equippedTo %></p>
                         </div>
-                    </div>
-                    <div class="artifact-equipped-to">
-                        <p class="artifact-equipped-text"><strong>Equipped:</strong> <%= allArtifacts[i].equippedTo %></p>
-                        <!-- <div class="artifact-actions">
-                            <form action="/artifacts/<%= allArtifacts[i].id %>">
-                                <input class="primary" type="submit" value="View Details" />
-                            </form>
-                        </div> -->
-                    </div>
+                    </a>
                 </div>
                 <% } %>
             </div>

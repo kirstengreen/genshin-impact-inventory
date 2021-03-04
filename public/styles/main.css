@@ -36,6 +36,12 @@ a {
 
 
 
+/* BUTTON STYLES */
+
+/* input */
+
+
+
 /* HEADER STYLES */
 
 header {
@@ -196,11 +202,19 @@ footer a {
 .artifact-grid-item {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     width: 250px;
     flex-grow: 1;
     background-color: rgb( 255, 255, 255 );
     box-shadow: 2px 2px 3px rgba( 51, 51, 51, .3 );
+}
+
+.artifact-link-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    color: rgb( 51, 51, 51 );
+    font-weight: normal;
 }
 
 .artifact-item-header {
