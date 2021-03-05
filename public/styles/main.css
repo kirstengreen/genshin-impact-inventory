@@ -183,7 +183,8 @@ footer a:hover {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
-    margin: 24px auto 32px;
+    margin: 24px auto;
+    min-height: 42px;
 }
 
 .category-header h1 {
@@ -205,19 +206,21 @@ footer a:hover {
     justify-content: flex-start;
     align-items: center;
     /* flex-grow: 1; */
-    width: 250px;
+    width: 400px;
     padding: 24px;
     background-color: rgb( 255, 255, 255 );
     box-shadow: 2px 2px 3px rgba( 51, 51, 51, .3 );
+    border: 2px solid rgb(204, 204, 204);
     border-radius: 5px;
+    text-align: center;
 }
 
-.grid-item ul {
-    padding: 0;
+.grid-item h3 {
+    margin-bottom: 8px;
 }
 
-.grid-item ul li {
-    list-style-type:none;
+.grid-item form input {
+    margin-top: 16px;
 }
 
 
@@ -244,6 +247,7 @@ footer a:hover {
     padding: 0 24px 24px;
     background-color: rgb( 255, 255, 255 );
     box-shadow: 2px 2px 3px rgba( 51, 51, 51, .3 );
+    border: 2px solid rgb(204, 204, 204);
     border-radius: 5px;
 }
 
@@ -399,9 +403,13 @@ a.artifact-link-content {
 
 /* ARTIFACT SHOW PAGE */
 
-.item-options{
+.item-options {
     display: flex;
     flex-direction: row;
+}
+
+.category-content form:not(:last-child) {
+    margin-right: 8px;
 }
 
 .artifact-content {
@@ -411,6 +419,7 @@ a.artifact-link-content {
     padding: 24px;
     background-color: rgb( 255, 255, 255 );
     box-shadow: 2px 2px 3px rgba( 51, 51, 51, .3 );
+    border: 2px solid #cccccc;
     border-radius: 5px;
 }
 
