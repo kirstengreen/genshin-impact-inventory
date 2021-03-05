@@ -6,7 +6,7 @@ Live site: <https://genshin-impact-inventory.herokuapp.com/>
 
 ## Overview
 
--
+During our back-end unit at General Assembly (Jan - Apr 2021), we were assigned a project to make a RESTful app that was full CRUD. I decided to make something centered around the game I was playing the most, Genshin Impact. At the time, farming artifacts was my #1 priority, so I decided to start there.
 
 
 ## About the App
