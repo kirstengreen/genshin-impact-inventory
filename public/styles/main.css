@@ -231,6 +231,10 @@ footer a:hover {
     border-radius: 5px;
 }
 
+.form-content input.button {
+    padding: 8px 16px;
+}
+
 .form-content select {
     margin-top: 8px;
     min-width: 280px;
