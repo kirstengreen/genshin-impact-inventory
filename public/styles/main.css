@@ -431,14 +431,6 @@ a.artifact-link-content {
     border-radius: 5px;
 }
 
-/* .artifact-col {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 24px;
-    width: 48%;
-} */
-
 .stats-col {
     display: flex;
     flex-direction: row;
@@ -456,6 +448,7 @@ a.artifact-link-content {
     flex-direction: column;
     justify-content: flex-end;
     width: 58%;
+    margin-top: 32px;
 }
 
 .show-main-stat {
