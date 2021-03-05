@@ -43,7 +43,8 @@ The primary goal of this app is to track all of the most important items you hav
 
 ## Process Images
 
--
+![alt text](https://genshin-impact-inventory.herokuapp.com/img/model-planning.png "Wireframes for artifact layouts")
+![alt text](https://genshin-impact-inventory.herokuapp.com/img/artifact-wires.png "Wireframes for artifact layouts")
 
 
 ## Future Features
