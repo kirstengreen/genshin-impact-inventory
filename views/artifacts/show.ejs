@@ -22,49 +22,51 @@
                     </form>
                 </div>
             </div>
-            <div class="artifact-content">
-                <div class="artifact-col">
-                    <p><strong>Set</strong></p>
-                    <p><%= artifact.set %></p>
-                    <p><strong>Rarity</strong></p>
-                    <p><%= artifact.rarity %></p>
-                    <p><strong>Level</strong></p>
-                    <p><%= artifact.level %></p>
-                    <p><strong>Type</strong></p>
-                    <p><%= artifact.type %></p>
-                </div>
-                <div class="artifact-col">
-                    <div class="stats">
-                        <h3>Main Stat</h3>
-                        <p><strong><%= artifact.mainStat.statType %></strong></p>
-                        <p><%= artifact.mainStat.statNumber %></p>
+            <div class="artifact-content-container">
+                <div class="artifact-content">
+                    <div class="artifact-col">
+                        <p><strong>Set</strong></p>
+                        <p><%= artifact.set %></p>
+                        <p><strong>Rarity</strong></p>
+                        <p><%= artifact.rarity %></p>
+                        <p><strong>Level</strong></p>
+                        <p><%= artifact.level %></p>
+                        <p><strong>Type</strong></p>
+                        <p><%= artifact.type %></p>
                     </div>
-                    <div class="stats">
-                    <% if ( artifact.subStat1.statType !== "None" ) { %>
-                        <h3>Sub Stats</h3>
-                        <p><strong><%= artifact.subStat1.statType %></strong></p>
-                        <p><%= artifact.subStat1.statNumber %></p>
-                        <% if ( artifact.subStat2.statType !== "None" ) { %>
-                        <p><strong><%= artifact.subStat2.statType %></strong></p>
-                        <p><%= artifact.subStat2.statNumber %></p>
+                    <div class="artifact-col">
+                        <div class="stats">
+                            <h3>Main Stat</h3>
+                            <p><strong><%= artifact.mainStat.statType %></strong></p>
+                            <p><%= artifact.mainStat.statNumber %></p>
+                        </div>
+                        <div class="stats">
+                        <% if ( artifact.subStat1.statType !== "None" ) { %>
+                            <h3>Sub Stats</h3>
+                            <p><strong><%= artifact.subStat1.statType %></strong></p>
+                            <p><%= artifact.subStat1.statNumber %></p>
+                            <% if ( artifact.subStat2.statType !== "None" ) { %>
+                            <p><strong><%= artifact.subStat2.statType %></strong></p>
+                            <p><%= artifact.subStat2.statNumber %></p>
+                            <% } %>
+                            <% if ( artifact.subStat3.statType !== "None" ) { %>
+                            <p><strong><%= artifact.subStat3.statType %></strong></p>
+                            <p><%= artifact.subStat3.statNumber %></p>
+                            <% } %>
+                            <% if ( artifact.subStat4.statType !== "None" ) { %>
+                            <p><strong><%= artifact.subStat4.statType %></strong></p>
+                            <p><%= artifact.subStat4.statNumber %></p>
+                            <% } %>
+                        <% } else { %>
+                            <h3>Sub Stats</h3>
+                            <p>None</p>
                         <% } %>
-                        <% if ( artifact.subStat3.statType !== "None" ) { %>
-                        <p><strong><%= artifact.subStat3.statType %></strong></p>
-                        <p><%= artifact.subStat3.statNumber %></p>
-                        <% } %>
-                        <% if ( artifact.subStat4.statType !== "None" ) { %>
-                        <p><strong><%= artifact.subStat4.statType %></strong></p>
-                        <p><%= artifact.subStat4.statNumber %></p>
-                        <% } %>
-                    <% } else { %>
-                        <h3>Sub Stats</h3>
-                        <p>None</p>
-                    <% } %>
+                        </div>
                     </div>
                 </div>
-                <div class="artifact-col">
-                    <p><strong>Equipped to</strong></p> 
-                    <p><%= artifact.equippedTo %></p>
+                <div class="equipped">
+                    <p><strong>Equipped</strong></p>
+                    <%- include ('../partials/character-portraits.ejs') %> 
                 </div>
             </div>
         </div>

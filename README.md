@@ -44,4 +44,11 @@ Live site:
 * Add additional images to better communicate what item a user is viewing
 * Add additional "pockets" for weapons, character materials, food, etc.
 * Add sort and filter functionality to allow users to find items of a specific value
+* Design revisions
 * Better mobile views
+
+
+## Resources
+
+Special thanks to the following:
+* Character Images: https://www.hoyolab.com/genshin/article/10378
